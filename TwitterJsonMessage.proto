@@ -24,10 +24,4 @@ message Twitter {
   int64 total_budget_amount_local_micro=19;
   string updated_at=20;
   string frequency_cap =21;
-  string hell2=22;
-  string hello2=23;
-  string hello22=24;
-  string hello222=25;
-  string hello2222=26;
-  string hello22222=27;
  }
