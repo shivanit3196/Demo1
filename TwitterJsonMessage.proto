@@ -27,3 +27,4 @@ message Twitter {
   string hello2=22;
   string hello22=23;
  }
+string isnewfield added = 30;
