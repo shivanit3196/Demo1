@@ -26,5 +26,5 @@ message Twitter {
   string frequency_cap =21;
   string hello2=22;
   string hello22=23;
- }
-string isnewfield added = 30;
+  string isnewfield added = 30;
+  }
