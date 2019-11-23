@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.practice;
+
+message Facbook{
+    string name = 1;
+    string age = 2;
+    repeated string friends = 3;
+}
