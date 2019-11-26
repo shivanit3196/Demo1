@@ -1,0 +1,17 @@
+syntax = 'proto3';
+option java_outer_classname = "twitterMain";
+message Twitter { 
+string account_currency=1;
+string account_id=2;
+string account_name=3;
+string action_value=4;
+repeated f_arrayOfintarrays F_ARRAYOFINTARRAYS=5;
+string clicks=6;
+repeated f_arrayOfintarrays COST_PER_10_SEC_VIDEO_VIEW=7;
+string new_addition = 8;
+}
+message f_arrayOfintarrays{
+string action_type=1;
+string value=2;
+}
+
