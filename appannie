@@ -2,8 +2,8 @@ syntax = 'proto3';
 option java_outer_classname = appannieMessage;
 message appannie{ 
 string data_start_date=1;
-string revenue=2;
-string downloads=3;
+int32 revenue=2;
+int32 downloads=3;
 string load_time=4;
 string device=5;
 string data_end_date=6;
