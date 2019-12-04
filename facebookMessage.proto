@@ -7,6 +7,5 @@ string account_name=3;
 string action_value=4;
 string insource=5;
 string insource2=6;
-string insource3=7;
 }
 
