@@ -1,0 +1,19 @@
+syntax = 'proto3';
+option java_outer_classname = appannieMessage;
+message appannie{ 
+string account_currency=1;
+string account_id=2;
+string account_name=3;
+string action_value=4;
+string insource=5;
+string insource2=6;
+string col1=7;
+int32 col2=8;
+string col3=9;
+double col4=10;
+bool col5=11;
+float col6=12;
+string col7=13;
+string col8=14;
+}
+
