@@ -8,5 +8,16 @@ string action_value=4;
 string insource=5;
 string insource2=6;
 string insource3=7;
+repeated array_account=8;
+row_account ROW_ACCOUNT=9;
+string account_last=10;
+}
+message row_account{
+string account_currency=1;
+string account_id=2;
+string account_name=3;
+string action_value=4;
+string insource=5;
+string insource2=6;
 }
 
