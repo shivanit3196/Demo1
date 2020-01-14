@@ -1,0 +1,22 @@
+syntax = 'proto3';
+option java_outer_classname = "appannie_usageMessage";
+message appannie_usage{ 
+int32 avg_session_duration=1;
+int32 retention_d1=2;
+int32 total_minutes=3;
+int32 avg_sessions_per_user=4;
+int32 percent_active_days=5;
+int32 install_penetration=6;
+int32 retention_d30=7;
+string data_date=8;
+int32 total_sessions=9;
+int32 avg_time_per_user=10;
+int32 active_users=11;
+int32 avg_active_days=12;
+string load_time=13;
+int32 usage_penetration=14;
+int32 retention_d7=15;
+string device=16;
+int32 open_rate=17;
+}
+
