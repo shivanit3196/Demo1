@@ -7,7 +7,7 @@ string retention_d1=3;
 string total_minutes=4;
 string avg_sessions_per_user=5;
 string percent_active_days=6;
-int32 install_penetration=7;
+double install_penetration=7;
 string retention_d30=8;
 string data_date=9;
 string total_sessions=10;
@@ -15,9 +15,9 @@ string avg_time_per_user=11;
 int32 active_users=12;
 string avg_active_days=13;
 string load_time=14;
-int32 usage_penetration=15;
+double usage_penetration=15;
 string retention_d7=16;
 string device=17;
-int32 open_rate=18;
+double open_rate=18;
 }
 
