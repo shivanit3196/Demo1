@@ -1,9 +1,11 @@
 syntax = 'proto3';
 option java_outer_classname = "appannie_metricMessage";
 message appannie_metric{ 
-string load_time=1;
-string data_date=2;
-string device=3;
-int32 value=4;
+string product=1;
+string metric=2;
+string load_time=3;
+string data_date=4;
+string device=5;
+int32 value=6;
 }
 
