@@ -1,13 +1,29 @@
 syntax = 'proto3';
 option java_outer_classname = "facebookMessage";
 message facebook{ 
-repeated int32 extra=1;
-repeated NAME name=2;
-bool checked=3;
+string account_currency=1;
+float account_balance=2;
+repeated F_ARRAYOFINTARRAYS f_arrayofintarrays=3;
+int32 account_currency_integer=4;
+string newfield=5;
+repeated F_ARRAYOFINTARRAYS cost_per_10_sec_video_view=6;
+int32 account_id=7;
+repeated string songs=8;
+string account_name=9;
+NAME name=10;
+string clicks=11;
+string action_value=12;
+bool is_male=13;
+int64 customer_id=14;
+double height=15;
 }
 message NAME{
-int32 middle=1;
-string last=2;
-string first=3;
+string last_name=1;
+string first_name=2;
+int32 first_name_integer=3;
+}
+message F_ARRAYOFINTARRAYS{
+string action_type=1;
+string value=2;
 }
 
