@@ -1,5 +1,5 @@
 syntax = 'proto3';
-option java_outer_classname = "AppAnnie-MarketSizeMessage";
+option java_outer_classname = "AppAnnie_MarketSizeMessage";
 message appannie_marketsize{ 
 string data_start_date=1;
 int32 revenue=2;
