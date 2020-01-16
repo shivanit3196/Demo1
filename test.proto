@@ -1,0 +1,17 @@
+syntax = 'proto3';
+import "google/protobuf/any.proto";
+option java_outer_classname = "testMessage";
+message test{ 
+repeated google.protobuf.Any tags_this_should_be_null_any=1;
+double price=2;
+double id2=3;
+string name=4;
+repeated double tags2=5;
+double id=6;
+DIMENSIONS dimensions=7;
+}
+message DIMENSIONS{
+repeated string width=1;
+double height=2;
+}
+
