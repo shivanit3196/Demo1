@@ -6,7 +6,7 @@ repeated NAME name=2;
 bool checked=3;
 }
 message NAME{
-int32 middle=1;
+double middle=1;
 string last=2;
 string first=3;
 }
