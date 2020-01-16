@@ -12,6 +12,7 @@ DIMENSIONS dimensions=7;
 }
 message DIMENSIONS{
 repeated string width=1;
-double height=2;
+repeated google.protobuf.Any height2_any=2;
+double height=3;
 }
 
