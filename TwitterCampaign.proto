@@ -1,4 +1,5 @@
 syntax = 'proto3';
+import "google/protobuf/any.proto";
 option java_outer_classname = "TwitterCampaignMessage";
 message twittercampaign{ 
 bool servable=1;
