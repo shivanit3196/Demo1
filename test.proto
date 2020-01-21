@@ -1,5 +1,4 @@
 syntax = 'proto3';
-import "google/protobuf/any.proto";
 option java_outer_classname = "testMessage";
 message test{ 
 repeated string tags_this_should_be_null_any=1;
