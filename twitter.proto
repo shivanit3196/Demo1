@@ -1,15 +1,11 @@
 syntax = 'proto3';
-import "fb/protobuf/facebook.proto";
-import "google/protobuf/any.proto";
 option java_outer_classname = "twitterMessage";
 message twitter{ 
 repeated string extra=1;
-repeated NAME1 name=2;
+repeated NAME name=2;
 bool checked=3;
-fb.protobuf.F_ARRAYOFINTARRAYS importing = 4;
-google.protobuf.Any msg1 = 5;
 }
-message NAME1{
+message NAME{
 double middle=1;
 string last=2;
 string first=3;
