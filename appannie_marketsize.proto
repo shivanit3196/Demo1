@@ -2,12 +2,10 @@ syntax = 'proto3';
 option java_outer_classname = "appannie_marketsizeMessage";
 message appannie_marketsize{ 
 string data_start_date=1;
-int32 revenue_integer=2;
-string revenue=3;
-int32 downloads=4;
-string load_time=5;
-string device_string=6;
-int32 device=7;
-string data_end_date=8;
+int32 revenue=2;
+int32 downloads=3;
+string load_time=4;
+string data_end_date=5;
+string device=6;
 }
 
