@@ -1,12 +1,17 @@
 syntax = 'proto3';
 option java_outer_classname = "testMessage";
 message test{ 
-string data_start_date=1;
-string revenue=2;
-string test=3;
-int32 downloads=4;
-string load_time=5;
-int32 device=6;
-string data_end_date=7;
+repeated string tags_this_should_be_null_any=1;
+int32 price=2;
+int32 id2=3;
+string name=4;
+repeated int32 tags2=5;
+int32 id=6;
+DIMENSIONS dimensions=7;
+}
+message DIMENSIONS{
+repeated string width=1;
+repeated string height2_any=2;
+int32 height=3;
 }
 
