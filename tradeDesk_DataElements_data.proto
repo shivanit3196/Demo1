@@ -1,0 +1,32 @@
+syntax = 'proto3';
+option java_outer_classname = "tradeDesk_DataElements_dataMessage";
+message tradedesk_dataelements_data{ 
+string _Advertiser_Currency_Code=1;
+string _Player_Starts=2;
+string _04__Total_Click___View_Conversions=3;
+string _Clicks=4;
+string _Bids=5;
+string _Data_Element=6;
+string _Player_Completed_Views=7;
+string _Advertiser=8;
+string _01__Total_Click___View_Conversions=9;
+string _Charged_Data_Element_Cost__Adv_Currency_=10;
+string _Impressions=11;
+string _Total_Bid_Amount__Adv_Currency_=12;
+string _Sampled_Tracked_Impressions=13;
+string _3rd_Party_Data_ID=14;
+string _Campaign=15;
+string _Tracking_Tag_ID=16;
+string _Not_Charged_Data_Element_Cost__Adv_Currency_=17;
+string _All_Last_Click___View_Conversions=18;
+string _03__Total_Click___View_Conversions=19;
+string _Hypothetical_Advertiser_Cost__Adv_Currency_=20;
+string _02__Total_Click___View_Conversions=21;
+string _05__Total_Click___View_Conversions=22;
+string _Ad_Group=23;
+string _Sampled_Viewed_Impressions=24;
+string _3rd_Party_Data_Brand=25;
+string _Not_Charged_Data_Impressions=26;
+string _Charged_Data_Impressions=27;
+}
+

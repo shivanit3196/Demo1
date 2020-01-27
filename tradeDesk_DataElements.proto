@@ -1,0 +1,6 @@
+syntax = 'proto3';
+option java_outer_classname = "tradeDesk_DataElementsMessage";
+message tradedesk_dataelements{ 
+string _=1;
+}
+
