@@ -2,5 +2,6 @@ syntax = 'proto3';
 option java_outer_classname = "SalesForceMessage";
 message salesforce{ 
 string Id=1;
+string Name=2;
 }
 
