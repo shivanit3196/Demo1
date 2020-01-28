@@ -1,12 +1,13 @@
 syntax = 'proto3';
 option java_outer_classname = "facebookMessage";
 message facebook{ 
-string data_start_date=1;
-string revenue=2;
-int32 downloads=3;
-string load_time=4;
-bool checked=5;
-int32 device=6;
-string data_end_date=7;
+repeated int32 extra=1;
+repeated NAME name=2;
+bool checked=3;
+}
+message NAME{
+int32 middle=1;
+string last=2;
+string first=3;
 }
 
