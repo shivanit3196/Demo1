@@ -2,7 +2,7 @@ syntax = 'proto3';
 option java_outer_classname = "TwitterAnalyticsMessage";
 message twitteranalytics{ 
 REQUEST request=1;
-double time_series_length=2;
+int32 time_series_length=2;
 repeated string data=3;
 string data_type=4;
 }
