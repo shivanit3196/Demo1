@@ -1,0 +1,6 @@
+syntax = 'proto3';
+option java_outer_classname = "AppsFlyerMessage";
+message appsflyer{ 
+string some=1;
+}
+
