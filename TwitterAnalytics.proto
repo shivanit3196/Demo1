@@ -17,19 +17,19 @@ MOBILE_CONVERSION_LIFETIME_VALUE_RATES mobile_conversion_lifetime_value_logins=6
 string video_cta_clicks=7;
 MOBILE_CONVERSION_LIFETIME_VALUE_RATES mobile_conversion_lifetime_value_purchases=8;
 MOBILE_CONVERSION_KEY_PAGE_VIEWS mobile_conversion_key_page_views=9;
-MOBILE_CONVERSION_LIFETIME_VALUE_LEVELS_ACHIEVED mobile_conversion_lifetime_value_levels_achieved=10;
-MOBILE_CONVERSION_UPDATES mobile_conversion_purchases=11;
+MOBILE_CONVERSION_LIFETIME_VALUE_RATES mobile_conversion_lifetime_value_levels_achieved=10;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_purchases=11;
 string auto_created_conversion_content_view=12;
-MOBILE_CONVERSION_LEVELS_ACHIEVED mobile_conversion_levels_achieved=13;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_levels_achieved=13;
 string auto_created_conversion_search=14;
 MOBILE_CONVERSION_LIFETIME_VALUE_RATES mobile_conversion_lifetime_value_sign_ups=15;
 string tweets_send=16;
 string likes=17;
-MOBILE_CONVERSION_CONTENT_VIEWS mobile_conversion_content_views=18;
+MOBILE_CONVERSION_UPDATES mobile_conversion_content_views=18;
 string video_total_views=19;
 CONVERSION_SIGN_UPS conversion_sign_ups=20;
 string follows=21;
-MOBILE_CONVERSION_UPDATES mobile_conversion_add_to_carts=22;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_add_to_carts=22;
 string auto_created_conversion_page_view=23;
 string media_views=24;
 string auto_created_conversion_added_payment_info=25;
@@ -37,12 +37,12 @@ string auto_created_conversion_add_to_cart=26;
 repeated int64 url_clicks=27;
 repeated int64 billed_engagements=28;
 MOBILE_CONVERSION_LIFETIME_VALUE_RATES mobile_conversion_lifetime_value_spent_credits=29;
-MOBILE_CONVERSION_UPDATES mobile_conversion_payment_info_additions=30;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_payment_info_additions=30;
 string replies=31;
 CONVERSION_CUSTOM conversion_custom=32;
 MOBILE_CONVERSION_INVITES mobile_conversion_invites=33;
 MOBILE_CONVERSION_LIFETIME_VALUE_RATES mobile_conversion_lifetime_value_tutorials_completed=34;
-MOBILE_CONVERSION_UPDATES mobile_conversion_shares=35;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_shares=35;
 string video_views_75=36;
 string auto_created_conversion_download=37;
 string auto_created_conversion_sign_up_initiated=38;
@@ -52,11 +52,11 @@ MOBILE_CONVERSION_LIFETIME_VALUE_CHECKOUTS_INITIATED mobile_conversion_lifetime_
 string auto_created_conversion_purchase=42;
 string auto_created_conversion_add_to_wish_list=43;
 string video_content_starts=44;
-MOBILE_CONVERSION_LIFETIME_VALUE_LEVELS_ACHIEVED mobile_conversion_lifetime_value_updates=45;
-MOBILE_CONVERSION_UPDATES mobile_conversion_tutorials_completed=46;
+MOBILE_CONVERSION_LIFETIME_VALUE_UPDATES mobile_conversion_lifetime_value_updates=45;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_tutorials_completed=46;
 string video_views_100=47;
-MOBILE_CONVERSION_UPDATES mobile_conversion_achievements_unlocked=48;
-MOBILE_CONVERSION_LIFETIME_VALUE_LEVELS_ACHIEVED mobile_conversion_lifetime_value_invites=49;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_achievements_unlocked=48;
+MOBILE_CONVERSION_LIFETIME_VALUE_UPDATES mobile_conversion_lifetime_value_invites=49;
 MOBILE_CONVERSION_DOWNLOADS mobile_conversion_downloads=50;
 repeated int64 billed_charge_local_micro=51;
 string video_views_25=52;
@@ -66,41 +66,48 @@ MOBILE_CONVERSION_LIFETIME_VALUE_RATES mobile_conversion_lifetime_value_reservat
 MOBILE_CONVERSION_LIFETIME_VALUE_RATES mobile_conversion_lifetime_value_shares=56;
 MOBILE_CONVERSION_LIFETIME_VALUE_RATES mobile_conversion_lifetime_value_searches=57;
 repeated int64 engagements=58;
-MOBILE_CONVERSION_UPDATES mobile_conversion_logins=59;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_logins=59;
 string retweets=60;
 string card_engagements=61;
 string video_3s100pct_views=62;
-MOBILE_CONVERSION_CONTENT_VIEWS mobile_conversion_checkouts_initiated=63;
+MOBILE_CONVERSION_CHECKOUTS_INITIATED mobile_conversion_checkouts_initiated=63;
 CONVERSION_CUSTOM conversion_downloads=64;
 CONVERSION_CUSTOM conversion_site_visits=65;
-MOBILE_CONVERSION_UPDATES mobile_conversion_spent_credits=66;
-MOBILE_CONVERSION_UPDATES mobile_conversion_reservations=67;
-MOBILE_CONVERSION_CONTENT_VIEWS mobile_conversion_re_engages=68;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_spent_credits=66;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_reservations=67;
+MOBILE_CONVERSION_UPDATES mobile_conversion_re_engages=68;
 MOBILE_CONVERSION_LIFETIME_VALUE_RATES mobile_conversion_lifetime_value_payment_info_additions=69;
 repeated int64 impressions=70;
 MOBILE_CONVERSION_LIFETIME_VALUE_RATES mobile_conversion_lifetime_value_add_to_carts=71;
 string auto_created_conversion_complete_registration=72;
-MOBILE_CONVERSION_LIFETIME_VALUE_LEVELS_ACHIEVED mobile_conversion_lifetime_value_content_views=73;
-MOBILE_CONVERSION_CONTENT_VIEWS mobile_conversion_installs=74;
+MOBILE_CONVERSION_LIFETIME_VALUE_UPDATES mobile_conversion_lifetime_value_content_views=73;
+MOBILE_CONVERSION_UPDATES mobile_conversion_installs=74;
 repeated int64 clicks=75;
 string video_views_50=76;
 MOBILE_CONVERSION_DOWNLOADS mobile_conversion_site_visits=77;
-MOBILE_CONVERSION_UPDATES mobile_conversion_rates=78;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_rates=78;
 string unfollows=79;
-MOBILE_CONVERSION_UPDATES mobile_conversion_sign_ups=80;
-MOBILE_CONVERSION_UPDATES mobile_conversion_add_to_wishlists=81;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_sign_ups=80;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_add_to_wishlists=81;
 string video_6s_views=82;
 CONVERSION_SIGN_UPS conversion_purchases=83;
-MOBILE_CONVERSION_UPDATES mobile_conversion_searches=84;
+MOBILE_CONVERSION_PURCHASES mobile_conversion_searches=84;
 string auto_created_conversion_checkout_initiated=85;
 MOBILE_CONVERSION_LIFETIME_VALUE_RATES mobile_conversion_lifetime_value_achievements_unlocked=86;
 }
-message MOBILE_CONVERSION_CONTENT_VIEWS{
+message MOBILE_CONVERSION_UPDATES{
 repeated int64 post_engagement=1;
 string assisted=2;
 repeated int64 post_view=3;
 string order_quantity=4;
 string sale_amount=5;
+}
+message MOBILE_CONVERSION_CHECKOUTS_INITIATED{
+repeated int64 post_engagement=1;
+string assisted=2;
+repeated int64 post_view=3;
+string order_quantity=4;
+repeated int64 sale_amount=5;
 }
 message CONVERSION_SIGN_UPS{
 string post_engagement=1;
@@ -134,7 +141,7 @@ string post_view=2;
 string order_quantity=3;
 string sale_amount=4;
 }
-message MOBILE_CONVERSION_LIFETIME_VALUE_LEVELS_ACHIEVED{
+message MOBILE_CONVERSION_LIFETIME_VALUE_UPDATES{
 repeated int64 metric=1;
 string order_quantity=2;
 string sale_amount=3;
@@ -157,14 +164,7 @@ repeated int64 post_view=3;
 string order_quantity=4;
 string sale_amount=5;
 }
-message MOBILE_CONVERSION_LEVELS_ACHIEVED{
-repeated int64 post_engagement=1;
-string assisted=2;
-string post_view=3;
-string order_quantity=4;
-string sale_amount=5;
-}
-message MOBILE_CONVERSION_UPDATES{
+message MOBILE_CONVERSION_PURCHASES{
 string post_engagement=1;
 string assisted=2;
 string post_view=3;
