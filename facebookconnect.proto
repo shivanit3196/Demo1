@@ -1,0 +1,20 @@
+syntax = 'proto3';
+option java_outer_classname = "facebookconnectMessage";
+message facebookconnect{ 
+string name=1;
+string last_name=2;
+string id=3;
+string first_name=4;
+PICTURE picture=5;
+string email=6;
+}
+message PICTURE{
+DATA data=1;
+}
+message DATA{
+bool is_silhouette=1;
+int32 width=2;
+string url=3;
+int32 height=4;
+}
+
