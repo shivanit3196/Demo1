@@ -1,12 +1,14 @@
 syntax = 'proto3';
 option java_outer_classname = "facebookconnectMessage";
 message facebookconnect{ 
-string name=1;
-string last_name=2;
-string id=3;
-string first_name=4;
-PICTURE picture=5;
-string email=6;
+repeated string facebooktoken=1;
+string name=2;
+string last_name=3;
+string id=4;
+repeated string loaddate=5;
+string first_name=6;
+PICTURE picture=7;
+string email=8;
 }
 message PICTURE{
 DATA data=1;
