@@ -1,7 +1,7 @@
 syntax = 'proto3';
-option java_outer_classname = "sampleMessage";
+option java_outer_classname = "commitTest1Message";
 syntax = 'proto3';
-option java_outer_classname = "appannie_marketsizeMessage";
+option java_outer_classname = "appannieMessage";
 message appannie_marketsize{ 
 string data_start_date=1;
 int32 revenue=2;
