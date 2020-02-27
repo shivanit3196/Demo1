@@ -1,5 +1,5 @@
 syntax = 'proto3';
-option java_outer_classname = "commitTest1Message";
+option java_outer_classname = "commitTest2Message";
 syntax = 'proto3';
 option java_outer_classname = "appannieMessage";
 message appannie_marketsize{ 
